@@ -84,6 +84,12 @@ Tested on AMD Ryzen 7 5800XT + NVIDIA RTX 4070 Ti, translating live NBA commenta
 - **Translation speed**: Depends on your CPU and Ollama model. `qwen3.5:9b` on a mid-range CPU takes ~1-2 seconds per utterance.
 - **VAD tuning**: If it picks up too much background noise, increase `--vad` to 3. If it cuts off speech too early, try `--vad 1`.
 
+## Disclaimer
+
+This tool is intended for personal use only (e.g., understanding video calls, YouTube content, or other audio for accessibility purposes). Users are responsible for complying with the copyright laws and terms of service of any audio sources they use with this tool.
+
+The tool itself contains no copyrighted content and does not circumvent any DRM or technical protection measures. It is a general-purpose audio transcription utility that processes audio already playing on your system.
+
 ## License
 
 MIT
