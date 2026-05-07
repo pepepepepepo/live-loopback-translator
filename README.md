@@ -4,6 +4,10 @@ Transcribes and translates English speech to Japanese in real-time.
 
 Built because I needed to understand English-only video calls and YouTube content — no cloud API, no subscriptions, just local models.
 
+![NBA commentary translated in real-time](screenshots/nba_translation.png)
+
+*Live NBA commentary translated to Japanese in real-time*
+
 ## How it works
 
 1. Captures audio via microphone or system loopback (WASAPI)
@@ -76,6 +80,10 @@ Tested on AMD Ryzen 7 5800XT + NVIDIA RTX 4070 Ti, translating live NBA commenta
 - **GPU VRAM**: ~11 GB used (Ollama model loaded — RTX 4070 Ti 12GB)
 - **Latency**: ~3–5 seconds from speech end to Japanese output
 - **Accuracy**: Proper nouns, numbers, and sports terminology handled well
+
+| CPU | GPU |
+|-----|-----|
+| ![CPU usage](screenshots/resource_usage%20cpu.png) | ![GPU usage](screenshots/resource_usage%20gpu.png) |
 
 > Whisper runs on CPU (`compute_type="int8"`). GPU is used only by Ollama for translation.
 
