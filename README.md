@@ -67,6 +67,17 @@ python voice_translator.py --stereo --vad 3
 python voice_translator.py --stereo --model gemma3:12b
 ```
 
+## Performance
+
+Tested on AMD Ryzen 7 5800XT + NVIDIA RTX 4070 Ti, translating live NBA commentary:
+
+- **CPU usage**: ~38% during transcription spikes (Whisper runs on CPU)
+- **GPU VRAM**: ~11 GB used (Ollama model loaded — RTX 4070 Ti 12GB)
+- **Latency**: ~3–5 seconds from speech end to Japanese output
+- **Accuracy**: Proper nouns, numbers, and sports terminology handled well
+
+> Whisper runs on CPU (`compute_type="int8"`). GPU is used only by Ollama for translation.
+
 ## Notes
 
 - **Whisper model**: Uses `small.en` by default (~461MB, downloads automatically on first run). Faster but English-only.
