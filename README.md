@@ -53,6 +53,7 @@ python voice_translator.py --list
 | `--vad 0-3` | `2` | VAD sensitivity. 0=lenient, 3=strict |
 | `--max N` | `7.0` | Force translation every N seconds (for long continuous speech) |
 | `--model NAME` | `qwen3.5:9b` | Ollama model to use for translation |
+| `--ollama URL` | `http://localhost:11434/api/generate` | Ollama API endpoint (for remote instances) |
 
 ### Examples
 

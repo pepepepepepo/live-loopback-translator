@@ -66,10 +66,13 @@ parser.add_argument("--max",    type=float, default=MAX_SPEECH_SECS,
                     help=f"Max buffer seconds before forced translation (default: {MAX_SPEECH_SECS})")
 parser.add_argument("--model",  type=str, default=TRANSLATE_MODEL,
                     help=f"Ollama model for translation (default: {TRANSLATE_MODEL})")
+parser.add_argument("--ollama", type=str, default=OLLAMA_URL,
+                    help=f"Ollama API URL (default: {OLLAMA_URL})")
 args = parser.parse_args()
 
-USE_LOOPBACK   = args.stereo
+USE_LOOPBACK    = args.stereo
 TRANSLATE_MODEL = args.model
+OLLAMA_URL      = args.ollama
 
 if args.list:
     pa = pyaudio.PyAudio()
