@@ -24,8 +24,8 @@ No audio is sent to any external service.
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/live-loopback-translator
-cd realtime-voice-translator
+git clone https://github.com/pepepepepepo/live-loopback-translator
+cd live-loopback-translator
 
 python -m venv .venv
 .venv\Scripts\activate
